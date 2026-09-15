@@ -73,7 +73,6 @@ export async function submitContact(
       }
       default: {
         if (import.meta.env.DEV) {
-          // eslint-disable-next-line no-console
           console.info("[contact:console]", safePayload);
         }
         return { ok: true };

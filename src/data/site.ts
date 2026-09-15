@@ -46,8 +46,18 @@ export const education = [
 
 export const projectsSummary = [
   { name: "Codexa", tagline: "AI code plagiarism detection", year: "2025", tag: "AI" },
-  { name: "Boutique Tours", tagline: "Premium Tourism Experience for North Wales", year: "2026", tag: "UI/UX" },
-  { name: "Michael's Food Store", tagline: "Modern e-commerce website for fresh products", year: "2026", tag: "Web Design" },
+  {
+    name: "Boutique Tours",
+    tagline: "Premium Tourism Experience for North Wales",
+    year: "2026",
+    tag: "UI/UX",
+  },
+  {
+    name: "Michael's Food Store",
+    tagline: "Modern e-commerce website for fresh products",
+    year: "2026",
+    tag: "Web Design",
+  },
   {
     name: "Private Club Website",
     tagline: "Exclusive digital experience for premium members",

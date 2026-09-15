@@ -54,7 +54,13 @@ type Project = {
   tags: string[];
   categories: Category[];
   links: { caseStudy?: string; prototype?: string };
-  cover: { label: string; from: string; to: string; device: "desktop" | "mobile" | "dashboard"; image?: string };
+  cover: {
+    label: string;
+    from: string;
+    to: string;
+    device: "desktop" | "mobile" | "dashboard";
+    image?: string;
+  };
   caseStudy: CaseStudy;
 };
 
@@ -74,7 +80,13 @@ const projects: Project[] = [
     tags: ["AI", "Dashboard", "SaaS"],
     categories: ["AI Products", "Dashboards", "Web Apps", "UI Design"],
     links: { caseStudy: "#", prototype: "#" },
-    cover: { label: "Codexa", from: "#2563EB", to: "#7C3AED", device: "dashboard", image: "/codexa.png" },
+    cover: {
+      label: "Codexa",
+      from: "#2563EB",
+      to: "#7C3AED",
+      device: "dashboard",
+      image: "/codexa.png",
+    },
     caseStudy: {
       overview:
         "Codexa helps instructors detect paraphrased, AI-rewritten and structurally-similar code across hundreds of submissions in minutes instead of hours.",
@@ -97,7 +109,8 @@ const projects: Project[] = [
     slug: "boutique-tours",
     name: "Boutique Tours",
     tagline: "Premium Tourism Experience for North Wales",
-    description: "Designed and developed the \"Boutique Tours of North Wales\" website, showcasing personalized travel experiences, scenic destinations, and seamless booking features.",
+    description:
+      'Designed and developed the "Boutique Tours of North Wales" website, showcasing personalized travel experiences, scenic destinations, and seamless booking features.',
     category: "UI / UX Design",
     platform: "Responsive Website",
     role: "UI/UX Designer",
@@ -107,23 +120,37 @@ const projects: Project[] = [
     tags: ["Tourism", "Luxury", "UI/UX"],
     categories: ["UI Design", "UX Design", "Web Apps"],
     links: { caseStudy: "#", prototype: "#" },
-    cover: { label: "Tour Works", from: "#15803d", to: "#1e3a8a", device: "desktop", image: "/boutique-tours.jpg" },
+    cover: {
+      label: "Tour Works",
+      from: "#15803d",
+      to: "#1e3a8a",
+      device: "desktop",
+      image: "/boutique-tours.jpg",
+    },
     caseStudy: {
-      overview: "Boutique Tours of North Wales is a premium tourism website designed to showcase personalized travel experiences across the breathtaking landscapes of North Wales.",
-      problem: "The client needed a premium digital presence to convey luxury, trust, and memorable experiences to encourage bookings.",
-      research: "Analyzed luxury tourism platforms to identify key conversion drivers and trust-building elements.",
-      wireframes: "Mapped a seamless user journey focusing on curated tours and breathtaking destination imagery.",
-      designSystem: "An elegant, user-friendly interface with a focus on luxury, utilizing a refined color palette and elegant typography.",
+      overview:
+        "Boutique Tours of North Wales is a premium tourism website designed to showcase personalized travel experiences across the breathtaking landscapes of North Wales.",
+      problem:
+        "The client needed a premium digital presence to convey luxury, trust, and memorable experiences to encourage bookings.",
+      research:
+        "Analyzed luxury tourism platforms to identify key conversion drivers and trust-building elements.",
+      wireframes:
+        "Mapped a seamless user journey focusing on curated tours and breathtaking destination imagery.",
+      designSystem:
+        "An elegant, user-friendly interface with a focus on luxury, utilizing a refined color palette and elegant typography.",
       hifi: "High-fidelity mockups highlighting stunning destinations, curated tours, and seamless navigation.",
-      prototype: "Interactive prototypes demonstrating the booking flow and destination exploration.",
-      results: "Delivered a design that encourages visitors to explore, connect, and book their next adventure with confidence."
+      prototype:
+        "Interactive prototypes demonstrating the booking flow and destination exploration.",
+      results:
+        "Delivered a design that encourages visitors to explore, connect, and book their next adventure with confidence.",
     },
   },
   {
     slug: "michaels-food-store",
     name: "Michael's Food Store",
     tagline: "Modern e-commerce website for fresh products",
-    description: "Designed a modern e-commerce website for Michael's Food Store, featuring fresh products, easy navigation, and a seamless online shopping experience.",
+    description:
+      "Designed a modern e-commerce website for Michael's Food Store, featuring fresh products, easy navigation, and a seamless online shopping experience.",
     category: "Web Design",
     platform: "Responsive Website",
     role: "UI/UX Designer",
@@ -133,23 +160,35 @@ const projects: Project[] = [
     tags: ["Food", "Ecommerce", "UI/UX"],
     categories: ["UI Design", "Web Apps"],
     links: { caseStudy: "#", prototype: "#" },
-    cover: { label: "Michael's Food", from: "#ea580c", to: "#fb923c", device: "desktop", image: "/michaels-food-store.png" },
+    cover: {
+      label: "Michael's Food",
+      from: "#ea580c",
+      to: "#fb923c",
+      device: "desktop",
+      image: "/michaels-food-store.png",
+    },
     caseStudy: {
       overview: "A fresh and modern e-commerce experience designed for Michael's Food Store.",
-      problem: "The store needed a digital storefront that conveys freshness while making the online shopping experience simple and intuitive.",
-      research: "Reviewed top online grocery and food delivery platforms to understand best practices for product discovery and cart management.",
-      wireframes: "Created layouts emphasizing high-quality product imagery and a frictionless checkout process.",
-      designSystem: "A vibrant, appetizing color palette with clean typography to let the food imagery stand out.",
+      problem:
+        "The store needed a digital storefront that conveys freshness while making the online shopping experience simple and intuitive.",
+      research:
+        "Reviewed top online grocery and food delivery platforms to understand best practices for product discovery and cart management.",
+      wireframes:
+        "Created layouts emphasizing high-quality product imagery and a frictionless checkout process.",
+      designSystem:
+        "A vibrant, appetizing color palette with clean typography to let the food imagery stand out.",
       hifi: "High-fidelity screens showcasing the homepage, product categories, and a streamlined cart.",
       prototype: "Interactive flows for browsing products, adding to cart, and checking out.",
-      results: "Delivered a welcoming and easy-to-use e-commerce platform that drives online sales."
+      results:
+        "Delivered a welcoming and easy-to-use e-commerce platform that drives online sales.",
     },
   },
   {
     slug: "pizza-app-design",
     name: "Pizza App Design",
     tagline: "Modern pizza ordering app",
-    description: "Designed a modern pizza ordering app with an intuitive interface, quick customization, and seamless checkout.",
+    description:
+      "Designed a modern pizza ordering app with an intuitive interface, quick customization, and seamless checkout.",
     category: "UI / UX Design",
     platform: "Mobile App",
     role: "UI/UX Designer",
@@ -159,23 +198,36 @@ const projects: Project[] = [
     tags: ["Food", "Mobile", "UI/UX"],
     categories: ["UI Design", "UX Design", "Mobile Apps"],
     links: { caseStudy: "#", prototype: "#" },
-    cover: { label: "Pizza App", from: "#ef4444", to: "#f59e0b", device: "mobile", image: "/pizza-app.png" },
+    cover: {
+      label: "Pizza App",
+      from: "#ef4444",
+      to: "#f59e0b",
+      device: "mobile",
+      image: "/pizza-app.png",
+    },
     caseStudy: {
-      overview: "A seamless and visually appetizing mobile application designed to simplify the pizza ordering process.",
+      overview:
+        "A seamless and visually appetizing mobile application designed to simplify the pizza ordering process.",
       problem: "Users often found pizza customization steps tedious and cluttered in legacy apps.",
-      research: "Reviewed top food delivery platforms to identify best practices for fast customization and intuitive navigation.",
-      wireframes: "Mobile-first wireframes focusing on a visual pizza builder and a quick checkout flow.",
-      designSystem: "Warm and appetizing color palette paired with bold, legible typography and high-quality food photography.",
+      research:
+        "Reviewed top food delivery platforms to identify best practices for fast customization and intuitive navigation.",
+      wireframes:
+        "Mobile-first wireframes focusing on a visual pizza builder and a quick checkout flow.",
+      designSystem:
+        "Warm and appetizing color palette paired with bold, legible typography and high-quality food photography.",
       hifi: "High-fidelity mockups of the menu, interactive pizza customizer, and streamlined cart.",
-      prototype: "Clickable prototype testing the end-to-end user journey from selection to payment.",
-      results: "Delivered a modern, engaging interface that reduces friction and speeds up the ordering process."
+      prototype:
+        "Clickable prototype testing the end-to-end user journey from selection to payment.",
+      results:
+        "Delivered a modern, engaging interface that reduces friction and speeds up the ordering process.",
     },
   },
   {
     slug: "private-club-website",
     name: "Private Club Website",
     tagline: "Exclusive digital experience",
-    description: "Designed and developed the \"Private Club Website Design\" project, delivering an exclusive digital experience with premium aesthetics, member-focused features, and seamless navigation.",
+    description:
+      'Designed and developed the "Private Club Website Design" project, delivering an exclusive digital experience with premium aesthetics, member-focused features, and seamless navigation.',
     category: "UI / UX Design",
     platform: "Web App",
     role: "UI/UX Designer",
@@ -185,16 +237,29 @@ const projects: Project[] = [
     tags: ["Clubs", "Luxury", "UI/UX"],
     categories: ["UI Design", "UX Design", "Web Apps"],
     links: { caseStudy: "#", prototype: "#" },
-    cover: { label: "Private Club", from: "#d97706", to: "#78350f", device: "desktop", image: "/private-club.png" },
+    cover: {
+      label: "Private Club",
+      from: "#d97706",
+      to: "#78350f",
+      device: "desktop",
+      image: "/private-club.png",
+    },
     caseStudy: {
-      overview: "A premium digital presence designed exclusively for a distinguished private members club.",
-      problem: "The club needed a digital experience that matched its real-world exclusivity and luxury while providing seamless membership management.",
-      research: "Analyzed elite hospitality and luxury lifestyle websites to establish a high-end visual language and user journey.",
-      wireframes: "Drafted elegant layouts focusing on high-quality imagery, clear membership tiers, and facility showcases.",
-      designSystem: "A refined and luxurious design system using sophisticated typography and a premium color palette.",
+      overview:
+        "A premium digital presence designed exclusively for a distinguished private members club.",
+      problem:
+        "The club needed a digital experience that matched its real-world exclusivity and luxury while providing seamless membership management.",
+      research:
+        "Analyzed elite hospitality and luxury lifestyle websites to establish a high-end visual language and user journey.",
+      wireframes:
+        "Drafted elegant layouts focusing on high-quality imagery, clear membership tiers, and facility showcases.",
+      designSystem:
+        "A refined and luxurious design system using sophisticated typography and a premium color palette.",
       hifi: "Polished interfaces detailing the club's amenities, dining experiences, and member application flow.",
-      prototype: "Interactive prototypes for the membership inquiry process and facility exploration.",
-      results: "Delivered a sophisticated digital platform that reinforces the club's exclusive brand identity and simplifies member onboarding.",
+      prototype:
+        "Interactive prototypes for the membership inquiry process and facility exploration.",
+      results:
+        "Delivered a sophisticated digital platform that reinforces the club's exclusive brand identity and simplifies member onboarding.",
     },
   },
   {
@@ -224,8 +289,7 @@ const projects: Project[] = [
         "Created mobile-first wireframes with a clear information hierarchy and simple navigation, focusing on quick access to important garage operations and reducing unnecessary steps.",
       designSystem:
         "Created a dark, modern automotive-focused design system with bold yellow accents, strong contrast, clean typography, structured cards, and clear visual hierarchy.",
-      hifi:
-        "Designed high-fidelity mobile screens for earnings tracking, job management, customer requests, appointments, roadside assistance, vehicle/service information, and garage operations.",
+      hifi: "Designed high-fidelity mobile screens for earnings tracking, job management, customer requests, appointments, roadside assistance, vehicle/service information, and garage operations.",
       prototype:
         "Created interactive Figma prototypes demonstrating the main user flows, including managing service jobs, viewing customer requests, checking earnings, handling appointments, and navigating core garage features.",
       results:
@@ -435,10 +499,11 @@ export function Projects() {
                 role="tab"
                 aria-selected={isActive}
                 onClick={() => setActive(f)}
-                className={`relative rounded-full border px-4 py-2 text-sm transition-colors ${isActive
+                className={`relative rounded-full border px-4 py-2 text-sm transition-colors ${
+                  isActive
                     ? "border-[color:var(--ink)] text-[color:var(--paper)]"
                     : "border-[color:var(--rule)] text-[color:var(--ink-soft)] hover:border-[color:var(--ink)]/40 hover:text-[color:var(--ink)]"
-                  }`}
+                }`}
               >
                 {isActive && (
                   <motion.span
@@ -490,11 +555,17 @@ function DeviceMockup({ project }: { project: Project }) {
   if (image) {
     return (
       <div className="relative w-full overflow-hidden bg-[color:var(--rule)]">
-        <img src={image} alt={`${project.name} preview`} className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.03]" />
+        <img
+          src={image}
+          alt={`${project.name} preview`}
+          className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.03]"
+        />
         <div className="absolute left-5 top-5 rounded-full border border-white/25 bg-black/40 px-3 py-1 text-[10.5px] uppercase tracking-[0.18em] text-white/90 backdrop-blur">
           {project.category}
         </div>
-        <div className="absolute right-5 top-5 font-display text-lg text-white/90 drop-shadow-md">{label}</div>
+        <div className="absolute right-5 top-5 font-display text-lg text-white/90 drop-shadow-md">
+          {label}
+        </div>
       </div>
     );
   }

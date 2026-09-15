@@ -9,7 +9,9 @@ const contactSchema = z.object({
   projectType: z.string().trim().min(1, "Please choose a project type").max(120),
   budget: z.string().trim().max(60).optional().or(z.literal("")),
   message: z.string().trim().min(10, "Tell me a little more").max(1500),
-  source: z.enum(["Portfolio Contact Form", "AI Portfolio Assistant"]).default("Portfolio Contact Form"),
+  source: z
+    .enum(["Portfolio Contact Form", "AI Portfolio Assistant"])
+    .default("Portfolio Contact Form"),
 });
 
 export const submitPortfolioContact = createServerFn({ method: "POST" })
